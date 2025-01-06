@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="content">
+    <h1>Welcome to Movie Search Engine!</h1>
+    <ul>
+        <li><a href="{% url 'title_search_project' %}">Movie Detail</a></li>
+        <li><a href="{% url 'SearchPageView' %}">Movie Search</a></li>
+        <li><a href="{% url 'add_movie' %}">Add Movie</a></li>
+        <li><a href="{% url 'actor_search_by_genre_project' %}">Search by actor & genre</a></li>
+        <li><a href="{% url 'actor_and_director_search_project' %}">Search by actor & director</a></li>
+        <li><a href="{% url 'lead_actors_search_project' %}">Lead actor search</a></li>
+        <li><a href="{% url 'actor_search_between_years_project' %}">Actor search between years</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
